@@ -1,0 +1,60 @@
+<header>
+<nav>
+        
+    <div class="menu" class="container-fluid">
+        <ul class="navbar-nav navbar-expand-md bg-dark navbar-dark  nav-fill">
+         <div >
+            <a href="www.Radhakrishnajwelleries.com" class="navbar-brand">RKjwelleries</a>
+         </div>
+          
+              <!-- <input  type="search" placeholder="search something"style="width:35%;"/>
+              <button type="button"  class="btn btn-primary btn-lg"   style="width:100px;">
+                <i class="fa fa-microphone"></i>
+              </button> 
+             <button type="button" class="btn btn-primary btn-lg" style="width:100px;">
+              <i class="fa fa-search"></i>
+            </button> -->
+          
+         
+           <li class="nav-item">
+            <a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()"routerLink="/welcome/radhakrishna jwelleries" class=" navbar-link  text-black ">Home</a></li>
+        <!-- <li class="nav-item dropdown">
+          <a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()"routerLink="/todos" class="navbar-link dropdown-toggle text-black " data-bs-toggle="dropdown">products</a>
+          <div class="dropdown-menu">
+            <div class="dropdown-header">Rate(1k-100k)</div>
+            <a routerLink="#" class="dropdown-item">Silver</a>
+            <a routerLink="#" class="dropdown-item">Gold</a>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-header">Rate(100k-10000k)</div>
+            <a routerLink="#" class="dropdown-item">Diamond</a>
+            <div class="dropdown-divider"></div>
+            <div class="dropdown-header">Rate(100-10000k)</div>
+            <a routerLink="#" class="dropdown-item">Roldgold</a>
+            <a routerLink="#" class="dropdown-item">Bronze</a>
+            
+      </div> 
+        
+        
+        </li>
+        -->
+        <li class="nav-item">
+          <a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()"routerLink="/products" class=" navbar-link  text-black ">products</a></li>
+        
+        <li class="nav-item "><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()"routerLink="#" class=" navbar-link  text-black">Cart</a></li>
+        
+       
+            <li class="nav-item "><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="#" class=" navbar-link  text-black">About</a></li>
+        <li class="nav-item "><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="#" class="navbar-link  text-black">Contact us</a></li>
+        
+        <ul class="navbar-nav navbar-collapse justify-content-end">
+          
+          <li class="nav-item "><a *ngIf="!hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/login" class=" navbar-link  text-black">Login</a></li>
+          <li class="nav-item "><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="/logout" class=" navbar-link  text-black">Logout</a></li>
+        
+        <li class="nav-item "><a *ngIf="hardcodedAuthenticationService.isUserLoggedIn()" routerLink="#"class="navbar-link  text-black">Notifications<span class="badge badge-danger bg-danger badge-pill">10</span></a></li>
+        </ul> 
+        </ul>     
+    </div>
+  
+    </nav>
+    </header>
